@@ -1,17 +1,15 @@
 import React from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
-import LogoIcon from '../../svg/LogoIcon';
-import logo from '../../assets/file.png';
+import logo from '../../assets/logo_horizontal.png';
 import Button from '../Button';
 
 const Header = () => (
-  <header className="sticky top-0 bg-white shadow">
+  <header className="sticky top-0 bg-white shadow z-50">
     <div className="container flex flex-col sm:flex-row justify-between items-center mx-auto py-4 px-8">
       <div className="flex items-center text-2xl">
-        <div className="w-12 mr-3">
+        <div className="object-contain sm:max-w-xs mr-3">
           <img src={logo} alt="" />
         </div>
-        <div className="text-2xl text-primary">Success Rocket</div>
       </div>
 
       <div className="flex mt-4 sm:mt-0">
@@ -19,17 +17,17 @@ const Header = () => (
           Features
         </AnchorLink>
         <AnchorLink className="px-4" href="#services">
-          Services
+          About
         </AnchorLink>
         <AnchorLink className="px-4" href="#blog">
           Blog
         </AnchorLink>
-        <AnchorLink className="px-4" href="#testimonials">
-          Testimonials
+        <AnchorLink className="px-4" href="#contact">
+          Contact
         </AnchorLink>
       </div>
       <div className="hidden md:block">
-        <Button className="text-sm">Contact Us</Button>
+        <Button className="text-sm">Login</Button>
       </div>
     </div>
   </header>

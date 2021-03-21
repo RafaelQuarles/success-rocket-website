@@ -9,6 +9,8 @@ import StatsBox from '../components/StatsBox';
 import customerData from '../data/customer-data';
 import HeroImage from '../svg/HeroImage';
 import SvgCharts from '../svg/SvgCharts';
+import ContactForm from '../components/contactForm';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 export default () => (
   <Layout>
@@ -16,16 +18,19 @@ export default () => (
       <div className="container mx-auto px-8 lg:flex">
         <div className="text-center lg:text-left lg:w-1/2">
           <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold leading-none">
-            Main title of Success Rocket landing page
+            Simplicity, Spectacular, Success!
           </h1>
           <p className="text-xl lg:text-2xl mt-6 font-light">
-            A landing page template to promote Success Rocket and generate leads for the offered
-            services
+            In this new era of blended, if not entire virtual work, the days of backward looking,
+            stale and unproductive annual reviews are over. It’s a new way of work, a new way of
+            thinking, and a new way of interaction.
           </p>
-          <p className="mt-8 md:mt-12">
-            <Button size="lg">Get Started</Button>
-          </p>
-          <p className="mt-4 text-gray-600">Sed fermentum felis ut cursu</p>
+          <div className="mt-8 md:mt-12 focus:outline-none">
+            <AnchorLink href="#contact">
+              <Button>Sign Up</Button>
+            </AnchorLink>
+          </div>
+          <p className="mt-4 text-gray-600"></p>
         </div>
         <div className="lg:w-1/2">
           <HeroImage />
@@ -40,8 +45,9 @@ export default () => (
             <Card className="mb-8">
               <p className="font-semibold text-xl">Service One</p>
               <p className="mt-4">
-                An enim nullam tempor gravida donec enim ipsum blandit porta justo integer odio
-                velna vitae auctor integer.
+                Truly easy-to-use capturing of success criteria at three levels to the employee:
+                Their own success, success alignment to the department, and success impact to the
+                business! Those connection points aren’t seen in any other engagement app!
               </p>
             </Card>
           </div>
@@ -49,8 +55,9 @@ export default () => (
             <Card className="mb-8">
               <p className="font-semibold text-xl">Service Two</p>
               <p className="mt-4">
-                An enim nullam tempor gravida donec enim ipsum blandit porta justo integer odio
-                velna vitae auctor integer.
+                Capturing of ongoing performance actions that can be adjusted throughout the year to
+                stay current with the key business imperatives. Plus, easy toggling to reflect when
+                actions are completed.
               </p>
             </Card>
           </div>
@@ -58,8 +65,8 @@ export default () => (
             <Card className="mb-8">
               <p className="font-semibold text-xl">Service Three</p>
               <p className="mt-4">
-                An enim nullam tempor gravida donec enim ipsum blandit porta justo integer odio
-                velna vitae auctor integer.
+                Clean and super-neat visual manager and employee dashboards providing up-to-date
+                action and result activity for each team member, as well as the department.
               </p>
             </Card>
           </div>
@@ -136,14 +143,16 @@ export default () => (
         </div>
       </div>
     </section>
-    <section className="container mx-auto my-20 py-24 bg-gray-200 rounded-lg text-center">
-      <h3 className="text-5xl font-semibold">Ready to grow your business?</h3>
-      <p className="mt-8 text-xl font-light">
-        Quis lectus nulla at volutpat diam ut. Enim lobortis scelerisque fermentum dui faucibus in.
+    <div id="contact"></div>
+    <section className="container mx-auto  my-20 py-24 bg-gray-200 md:rounded-lg text-center">
+      <h3 className="px-8 text-5xl font-semibold">Ready to measure success?</h3>
+      <p className="px-8 mt-8 text-xl font-light">
+        Contact us here to start your Success Rocket experience.
       </p>
-      <p className="mt-8">
-        <Button size="xl">Get Started Now</Button>
-      </p>
+
+      <div className="px-8 max-w-2xl text-left mx-auto">
+        <ContactForm />
+      </div>
     </section>
   </Layout>
 );
