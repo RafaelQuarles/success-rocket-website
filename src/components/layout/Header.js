@@ -30,7 +30,7 @@ const Header = () => (
           Contact
         </AnchorLink>
       </div>
-      <div className="hidden lg:block">
+      <div className="flex block">
         <Button className="text-sm">Login</Button>
         <Button className="text-sm mx-4" color="purple">
           Free Trail
