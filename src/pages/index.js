@@ -52,10 +52,10 @@ const StyledFeatureImg = styled.img`
 export default () => (
   <Layout>
     <HeroWaves />
-    <section className="pt-20 lg:px-12 md:pt-32">
+    <section className="mx-8 md:mx-0 pt-20 lg:px-12 md:pt-32">
       <div className="container mx-auto lg:flex">
         <div className="lg:pr-20 text-left lg:w-1/2">
-          <h1 className="text-3xl lg:text-5xl font-bold leading-none">
+          <h1 className="text-3xl xl:text-5xl font-bold leading-none">
             Employee Engagement + Employee Empowerment = Employee Success
           </h1>
           <p className="lg:text-2xl mt-6 font-light">
@@ -64,9 +64,19 @@ export default () => (
             employees to connect-the-dots on how their success impacts the success of their
             department, as well as their organization.
           </p>
-          <div className="mt-8 md:mt-12 focus:outline-none">
+          <div className="flex-none mt-8 md:mt-12 focus:outline-none">
             <AnchorLink href="#contact">
-              <Button color="blue">View Demo</Button>
+              <Button className="m-2 xl:hidden">Login</Button>
+            </AnchorLink>
+            <AnchorLink href="#">
+              <Button className="m-2 xl:hidden" color="purple">
+                Free Trail
+              </Button>
+            </AnchorLink>
+            <AnchorLink href="#contact">
+              <Button className="m-2" color="blue">
+                View Demo
+              </Button>
             </AnchorLink>
           </div>
           <p className="mt-4 text-gray-600"></p>

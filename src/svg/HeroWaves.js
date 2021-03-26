@@ -10,7 +10,10 @@ const animationTime = '100s';
 const StyledSvg = styled.svg`
   z-index: -10;
   @media (max-width: 768px) {
-    width: 0;
+    width: 1800px;
+    top: 50px;
+    left: -200px;
+    opacity: 80%;
   }
 `;
 
