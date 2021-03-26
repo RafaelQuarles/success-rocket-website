@@ -10,6 +10,7 @@ import customerData from '../data/customer-data';
 import HeroImage from '../svg/HeroImage';
 import SvgCharts from '../svg/SvgCharts';
 import HeroWaves from '../svg/HeroWaves';
+import FeatureWaves from '../svg/FeatureWaves';
 import ContactForm from '../components/contactForm';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 
@@ -55,7 +56,7 @@ export default () => (
     <section className="mx-8 md:mx-0 pt-20 lg:px-12 md:pt-32">
       <div className="container mx-auto lg:flex">
         <div className="lg:pr-20 text-left lg:w-1/2">
-          <h1 className="text-3xl xl:text-5xl font-bold leading-none">
+          <h1 className="text-3xl font-bold leading-none">
             Employee Engagement + Employee Empowerment = Employee Success
           </h1>
           <p className="lg:text-2xl mt-6 font-light">
@@ -87,12 +88,13 @@ export default () => (
         </Parent>
       </div>
     </section>
+    <FeatureWaves />
     <section id="features" className="py-20 lg:px-12 lg:pb-40 lg:pt-48">
       <div className="container mx-auto text-center">
         <h2 className="text-3xl lg:text-5xl font-semibold">Main Features</h2>
         <div className="flex flex-col md:flex-row sm:-mx-3 mt-12">
           <div className="flex-1 px-3">
-            <Card className="p-4 min-h-400">
+            <Card className="p-4 lg:min-h-400">
               <StyledFeatureImg src={dash} alt="" />
               <p className="font-semibold text-xl">Dashboard</p>
               <p className="mt-4">
@@ -103,7 +105,7 @@ export default () => (
             </Card>
           </div>
           <div className="flex-1 px-3">
-            <Card className="p-4 min-h-400">
+            <Card className="p-4 lg:min-h-400">
               <StyledFeatureImg src={act} alt="" />
               <p className="font-semibold text-xl">Actions</p>
               <p className="mt-4">
@@ -114,7 +116,7 @@ export default () => (
             </Card>
           </div>
           <div className="flex-1 px-3">
-            <Card className="p-4 min-h-400">
+            <Card className="p-4 lg:min-h-400">
               <StyledFeatureImg src={chec} alt="" />
               <p className="font-semibold text-xl">Check In</p>
               <p className="mt-4">
@@ -124,7 +126,7 @@ export default () => (
             </Card>
           </div>
           <div className="flex-1 px-3">
-            <Card className="p-4 min-h-400">
+            <Card className="p-4 lg:min-h-400">
               <StyledFeatureImg src={coll} alt="" />
               <p className="font-semibold text-xl">Collaboration</p>
               <p className="mt-4">
@@ -136,7 +138,7 @@ export default () => (
             </Card>
           </div>
           <div className="flex-1 px-3">
-            <Card className="p-4 min-h-400">
+            <Card className="p-4 lg:min-h-400">
               <StyledFeatureImg src={prof} alt="" />
               <p className="font-semibold text-xl">Profile</p>
               <p className="mt-4">
