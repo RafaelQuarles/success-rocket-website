@@ -1,4 +1,6 @@
 @tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 a {
   @apply text-primary;
@@ -6,7 +8,9 @@ a {
 a:hover {
   @apply text-primary-darker;
 }
-
-@tailwind components;
-
-@tailwind utilities;
+h1 {
+  font-family: 'Source Sans Pro';
+}
+p {
+  font-family: 'Open Sans';
+}

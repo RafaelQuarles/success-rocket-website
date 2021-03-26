@@ -1,6 +1,6 @@
 import React from 'react';
 
-const mainColor = '#fb0018';
+const mainColor = '#cc0033';
 
 const HeroImage = () => (
   <svg

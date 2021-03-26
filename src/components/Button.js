@@ -6,15 +6,21 @@ const sizes = {
   xl: `py-5 px-16 text-lg`
 };
 
-const Button = ({ children, className = '', size }) => {
+const colors = {
+  default: 'bg-primary',
+  purple: 'bg-secondary',
+  blue: 'bg-tertiary'
+};
+
+const Button = ({ children, className = '', size, color }) => {
   return (
     <button
       type="button"
       className={`
         ${sizes[size] || sizes.default}
         ${className}
-        bg-primary
-        hover:bg-primary-darker
+        ${colors[color] || colors.default}
+        hover:${colors[color] || colors.default}-darker
         rounded
         text-white
     `}

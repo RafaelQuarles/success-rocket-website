@@ -1,6 +1,7 @@
 import React from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import logo from '../../assets/logo_horizontal.png';
+import LogoHorizontal from '../../svg/LogoHorizontal';
 import Button from '../Button';
 
 const Header = () => (
@@ -12,22 +13,28 @@ const Header = () => (
         </div>
       </div>
 
-      <div className="flex mt-4 sm:mt-0">
-        <AnchorLink className="px-4" href="#features">
+      <div className="flex mt-4 text-gray-700 sm:mt-0">
+        <AnchorLink className="px-4 lg:mx-4 text-gray-700" href="#features">
           Features
-        </AnchorLink>
-        <AnchorLink className="px-4" href="#services">
+        </AnchorLink>{' '}
+        |
+        <AnchorLink className="px-4 lg:mx-4 text-gray-700" href="#services">
           About
-        </AnchorLink>
-        <AnchorLink className="px-4" href="#blog">
+        </AnchorLink>{' '}
+        |
+        <AnchorLink className="px-4 lg:mx-4 text-gray-700" href="#blog">
           Blog
-        </AnchorLink>
-        <AnchorLink className="px-4" href="#contact">
+        </AnchorLink>{' '}
+        |
+        <AnchorLink className="px-4 lg:mx-4 text-gray-700" href="#contact">
           Contact
         </AnchorLink>
       </div>
-      <div className="hidden md:block">
+      <div className="hidden lg:block">
         <Button className="text-sm">Login</Button>
+        <Button className="text-sm mx-4" color="purple">
+          Free Trail
+        </Button>
       </div>
     </div>
   </header>
